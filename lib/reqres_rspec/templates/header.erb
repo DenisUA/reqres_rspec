@@ -55,7 +55,7 @@
 <body>
 <div class="container">
   <h1><%= ReqresRspec.configuration.title %></h1>
-  <p>Generated <%= Time.now.strftime('%d %B %Y at %H:%m:%S')%> with <a href="https://github.com/reqres-api/reqres_rspec">reqres_rspec</a></p>
+  <p>Generated <%= DateTime.now.strftime('%d %B at %H:%m')%></p>
   <ol>
     <% @records.group_by { |x| x[:group] }.sort.each do |group, records| %>
       <li>
